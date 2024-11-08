@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #1E3E62;
+    overflow: hidden;
+}
+
+.sidebar ul li{
+    list-style-type: none;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.sidebar{
+    transform: translateX(-100%);
+    width: 75%;
+    background-color: #fff;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    display: block;
+    color: #091057;
+    height: 3rem;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.logo{
+    width: 50%;
+    margin: auto;
+    
+}
+
+.menubutton{
+    margin: 15px;
+    font-size: 30px;
+}
+
+
+input:checked ~ .sidebar{
+    transform: translateX(0);
+
+}
